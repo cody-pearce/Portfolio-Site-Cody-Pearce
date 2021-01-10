@@ -1,8 +1,55 @@
+/*
+Colors used:
+Primary Color (Dark Blue): #0A192F;
+Secondary Color (Green): #64FFDA;
+Text Bright (Blue): #CCD6F6;
+Text Body (Grey Blue): #8892B0;
+*/
+
+
 body {
-    background-color: #fafafa;
+    background-color: #0A192F;
     font-family: 'open sans', Arial, Helvetica, sans-serif;
     font-size: 16px; 
     font-weight: 400;
     line-height: 1.6;
-    color: #4a4a4a;
+    color: #8892B0;
+}
+
+img {
+    width: 100%;
+}
+
+h1, h2, h3, h4 {
+    line-height: 1.4;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: 700;
+}
+  
+h2 {
+    font-size: 2.25em;
+    font-weight: 700;
+}
+  
+h3 {
+    font-size: 1.75em;
+    font-weight: 400;
+}
+
+h4 {
+    font-size: 1.35em;
+    font-weight: 400;
+}
+
+a {
+    color: #64FFDA;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #3CD3AF;
+    text-decoration: underline;
 }
