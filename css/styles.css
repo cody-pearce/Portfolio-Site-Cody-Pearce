@@ -6,6 +6,9 @@ Text Bright (Blue): #CCD6F6;
 Text Body (Grey Blue): #8892B0;
 */
 
+*{
+    box-sizing:border-box;
+}
 
 body {
     background-color: #0A192F;
@@ -14,6 +17,39 @@ body {
     font-weight: 400;
     line-height: 1.6;
     color: #8892B0;
+}
+
+header{
+    background-color: #0A192F;
+    text-align: center;
+    padding: 10px 0 0 0;
+    position: fixed;
+    width: 100%;
+}
+
+main {
+    padding-top: 90px;
+}
+
+nav {
+    display:inline-block;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li  {
+    display: inline-block;
+
+}
+
+nav ul li a {
+    padding:0 10px;
+    text-transform: uppercase;
+    font-weight: 400;
+    
 }
 
 img {
@@ -25,6 +61,7 @@ h1, h2, h3, h4 {
 }
 
 h1 {
+    color: #CCD6F6;
     font-size: 3em;
     font-weight: 700;
 }
@@ -44,6 +81,11 @@ h4 {
     font-weight: 400;
 }
 
+.intro{
+    font-size: 2.75;
+    color: #8892B0;
+}
+
 a {
     color: #64FFDA;
     text-decoration: none;
@@ -52,4 +94,74 @@ a {
 a:hover {
     color: #3CD3AF;
     text-decoration: underline;
+    display: inline-block;
+}
+
+.logo {
+    max-width: 250px;
+}
+
+.social{
+    width: 40px;
+    height: 40px;
+    color: #CCD6F6;
+    margin: 10px 10px 0 10px;
+}
+
+.links a {
+    padding: 20px 10px 10px 10px;
+    margin-bottom: 10px;
+}
+
+.me {
+    display: inline-block;
+    vertical-align: middle;
+    height: 2%;
+    border-radius: 200px;
+}
+
+/*--Button Styling--*/
+
+.btn {
+    background-color: #0A192F;
+    border: 1px solid #64FFDA;
+    border-radius: 4px;
+    color: #64FFDA;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.btn:hover {
+    background-color: rgb(55, 97, 88);
+    text-decoration: none;
+
+}
+
+
+/*--Layout Styling--*/
+
+.container{
+    padding: 0 15px;
+}
+
+.row{
+    margin:25px 0;
+}
+
+#work{
+    padding-bottom: 25px;
+    border-bottom: 1px solid #8892B0;
+}
+
+#hero{
+    padding: 20px 0;
+    display: inline-block;
+    width: 100%;
+}
+
+#hero h1{
+    text-align: center;
 }
