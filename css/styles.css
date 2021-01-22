@@ -74,6 +74,7 @@ h2 {
 h3 {
     font-size: 1.75em;
     font-weight: 400;
+    color: #CCD6F6;
 }
 
 h4 {
@@ -94,7 +95,6 @@ a {
 a:hover {
     color: #3CD3AF;
     text-decoration: underline;
-    display: inline-block;
 }
 
 .logo {
@@ -108,17 +108,21 @@ a:hover {
     margin: 10px 10px 0 10px;
 }
 
+
 .links a {
     padding: 20px 10px 10px 10px;
     margin-bottom: 10px;
 }
 
 .me {
-    display: inline-block;
-    vertical-align: middle;
-    height: 2%;
-    border-radius: 200px;
+    display: block;
+    height: 200px;
+    width: 200px;
+    border-radius: 150px;
+    margin-left: auto;
+    margin-right: auto;
 }
+
 
 /*--Button Styling--*/
 
@@ -132,12 +136,13 @@ a:hover {
     text-decoration: none;
     display: inline-block;
     margin-bottom: 15px;
+    transition-duration: 0.2s;
+    transition-property: background-color;
 }
 
 .btn:hover {
     background-color: rgb(55, 97, 88);
     text-decoration: none;
-
 }
 
 
@@ -160,8 +165,138 @@ a:hover {
     padding: 20px 0;
     display: inline-block;
     width: 100%;
+    text-align: center;
 }
 
 #hero h1{
     text-align: center;
+}
+
+.placeartimg {
+    margin-top: 25px;
+}
+
+/*------------CSS Animation-------------*/
+
+
+.berlin-illustration {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+@keyframes color-change {
+    0% {fill: #edc655;}
+    50% {fill: #fcffad;}
+    100% {fill:#f76414;}
+}
+
+/*--
+.sun {
+    animation-duration: 4s;
+    animation-name: color-change;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+--*/
+
+.sun {
+    animation: 4s color-change infinite alternate linear;
+}
+
+
+@keyframes cloud-move {
+    from {transform: translate(0,50px);}
+    to {transform: translate(200px,50px);}
+}
+
+
+/*--
+.cloud-front {
+    animation-duration: 30s;
+    animation-name: cloud-move;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+
+}
+--*/
+
+.cloud-front {
+    animation: 30s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse{
+    from{ transform: translate(446px,48px);}
+    to{ transform: translate(100px,48px);}
+}
+
+.cloud-back{
+    animation: 38s cloud-move-reverse infinite alternate linear;
+}
+
+/*------------MEDIA QUERIES-------------*/
+
+
+/*--Medium Screens 640 and larger--*/
+@media only screen and (min-width:640px) {
+
+header{
+    text-align: unset;
+}
+
+nav {
+    width: auto;
+    float: right;
+    
+}
+
+#hero {
+    font-size: 18px;
+}
+
+.letsavehead{
+    margin-top: 0;
+}
+
+.col-md-6 {
+    width: 50%;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 10px;
+}
+
+.row::after {
+    content:"";
+    clear: both;
+    display: table;
+}
+
+}
+
+/*--Large Screens 1024 and larger--*/
+@media only screen and (min-width: 1024px) {
+
+.col-lg-7 {
+    width: 58.33%;
+}
+
+.col-lg-5 {
+    width: 41.66%;
+}
+
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+}
+
+/*--Extra Large Screens 1440 and larger--*/
+@media only screen and (min-width: 1440px) {
+
 }
