@@ -21,7 +21,7 @@ body {
 
 header{
     background-color: #0A192F;
-    text-align: center;
+    
     padding: 10px 0 0 0;
     position: fixed;
     width: 100%;
@@ -40,9 +40,21 @@ nav ul {
     padding: 0;
 }
 
-nav ul li  {
-    display: inline-block;
+/*--hide nav items except hamburger--*/
+.navtoggle li:not(:last-child) {
+    display: none;
+}
 
+.navtoggle, .navtoggle.responsive {
+    position: relative;
+}
+
+
+.navtoggle li .icon {
+    position: absolute;
+    right: 0;
+    top: 11px;
+    font-size: 20px;
 }
 
 nav ul li a {
@@ -274,6 +286,32 @@ nav {
     clear: both;
     display: table;
 }
+
+nav ul li  {
+    display: inline-block;
+
+}
+
+
+
+.navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+.navtoggle li:last-child {
+    display: none;
+}
+
+
+
+.navtoggle.responsive li {
+    display: block;
+    padding: 10px 0;
+}
+
+.navtoggle.responsive li:last-child  {
+    padding: 0 0 10px;
+  }
 
 }
 
