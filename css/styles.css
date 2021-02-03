@@ -45,6 +45,12 @@ nav ul {
     display: none;
 }
 
+.navtoggle.responsive li {
+    display: block;
+    float: left;
+    padding-left: 7px;
+    }
+
 .navtoggle, .navtoggle.responsive {
     position: relative;
 }
